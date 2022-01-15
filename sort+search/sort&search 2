@@ -1,0 +1,181 @@
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args){
+        int[] numbers_1= {17, 21, 21, 186, 249, 263, 313, 367, 432, 473, 477, 482, 580, 610, 642, 648, 671, 802, 819, 976};
+        int[] numbers_2= {63, 105, 186, 253, 255, 288, 370, 416, 420, 461, 532, 680, 745, 760, 821, 822, 912, 964, 985, 996};
+        int[] numbers_3= {10, 21, 21, 186, 249, 263, 313, 367, 432, 473, 477, 482, 580, 610, 642, 648, 671, 802, 819, 976};
+        int[] numbers_4= {21, 10, 21, 249, 186};
+        String[] words1 = {"Archaeologist","Bagulynik","Bitchman","Carol","Mosquito","Nakhimovets","Outside","Thing","Tominmale","Vdryzg"};
+        String[] words2 = {"Anaconda","Cards","Chistopigan","Fox Terrier","liaison","Seem","To be able to","To be crowned","Two"};
+        Main.avarage(numbers_1);
+        Main.min_max(numbers_1);
+        Main.length_5(words1);
+        Main.duplicates(numbers_1);
+        Main.i_tam_i_tam(numbers_1, numbers_2);
+        Main.tolko_tam(numbers_1, numbers_3);
+        Main.izmena(numbers_4);
+        Main.sort(numbers_4);
+    }
+
+    public static void avarage(int[] array){
+        int sum=0;
+        for (int i = 0; i<array.length;i++){
+            sum += array[i];
+        }
+        System.out.println("AVARAGE:"+(float) sum/array.length);
+    }
+
+    public static void min_max(int[] array){
+        int max=1, min;
+        min = array[0];
+        for (int i = 0; i<array.length;i++){
+            if (array[i]>=max){
+                max = array[i];
+            }
+            if (array[i]<=min){
+                min = array[i];
+            }
+        }
+        System.out.println("MAX:" + max);
+        System.out.println("MIN:" + min);
+    }
+
+    public static void length_5(String[] array){
+        System.out.println("Длинее чем 5 и уникальная пара первого + последнего символа:");
+        for (int i = 0; i<array.length;i++){
+            if (array[i].length()>=5){
+                if(array[i].charAt(0) != array[i].charAt(array[i].length()-1)){
+                    System.out.println(array[i]);
+                }
+            }
+        }
+    }
+
+
+    public static void duplicates(int[] array) {
+        System.out.println("Дублируются:");
+        final Set<Integer> duplicate = new HashSet<>();
+        final Set<Integer> set = new HashSet<>();
+        for (Integer integer : array)
+        {
+            if (!set.add(integer))
+            {
+                duplicate.add(integer);
+            }
+        }
+        for (Integer out: duplicate){
+            System.out.println(out);
+        }
+    }
+
+    public static void i_tam_i_tam(int[] array_1, int[] array_2){
+        System.out.println("Повторяется и там, и там:");
+        for (int i = 0; i < array_1.length; i++) {
+            int a = array_1[i];
+            for (int j = 0; j < array_2.length; j++)
+            {
+                if (a == array_2[j])
+                {
+                    System.out.println(a);
+                }
+            }
+        }
+    }
+
+    public static void tolko_tam(int[] array_1, int[] array_2){
+        boolean oba = true;
+        System.out.println("Только в первом:");
+        for (Integer intik_1: array_1){
+                for (Integer intik_2 : array_2) {
+                    if (intik_1 == intik_2){
+                        oba = false;
+                    }
+                }
+                if (oba){
+                    System.out.println(intik_1);
+                }
+        }
+        System.out.println("Только во втором:");
+        oba = true;
+        for (Integer intik_1: array_2){
+            for (Integer intik_2 : array_1) {
+                if (intik_1 == intik_2){
+                    oba = false;
+                }
+            }
+            if (oba){
+                System.out.println(intik_1);
+            }
+        }
+    }
+
+    public static void izmena(int[] array){
+        System.out.println("Я изменил твоё направление и вот, что получилось:");
+        System.out.print("{");
+        for(int i = array.length-1; i>-1; i--){
+            System.out.print(+ array[i]);
+            if (i > 0){
+                System.out.print("," + " ");
+            }
+        }
+        System.out.print("}");
+        System.out.print("\n");
+    }
+
+
+    public static int smallest(int[] array){
+        int min  = array[0];
+        for (int i = 1; i<array.length; i++) {
+            if (array[i]<min){
+                min = array[i];
+            }
+        }
+        return min;
+    }
+
+
+
+    public static int indexOfSmallest(int[] array){
+        int indexOfSmallest = 0;
+        for (int i = 1; i<array.length; i++) {
+            if (array[i]<array[indexOfSmallest]){
+                indexOfSmallest = i;
+            }
+        }
+        return indexOfSmallest;
+    }
+
+    public static int indexOfSmallestFrom(int[] array, int startIndex) {
+        int indexOfSmallestFrom = startIndex;
+        for (int i = startIndex+1; i<array.length; i++) {
+            if (array[i]<array[indexOfSmallestFrom]){
+                indexOfSmallestFrom = i;
+            }
+        }
+        return indexOfSmallestFrom;
+    }
+
+    public static void swap(int[] array, int index1, int index2) {
+        Integer change = array[index1];
+        array[index1]=array[index2];
+        array[index2]=change;
+    }
+
+    public static void sort(int[] array) {
+        for (int i = 0; i<array.length;i++){
+            Main.swap(array, i, Main.indexOfSmallestFrom(array, i));
+        }
+        System.out.println("После сортировки");
+        System.out.println(Arrays.toString(array));
+    }
+
+
+}
+
+
+
+
+
+

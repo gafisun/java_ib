@@ -1,0 +1,23 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("Give a number:");
+        Scanner scanner = new Scanner(System.in);
+        String s_number = scanner.nextLine();
+        Integer number = Integer.parseInt(s_number);
+        Integer count = 0;
+        Integer sum = 0;
+        while (number != 0) {
+            count += 1;
+            sum += number;
+            System.out.println("Give a number:");
+            s_number = scanner.nextLine();
+            number = Integer.parseInt(s_number);
+        }
+        System.out.println("Number of numbers: " + count);
+        System.out.println("Sum of the numbers: " + sum);
+    }
+}

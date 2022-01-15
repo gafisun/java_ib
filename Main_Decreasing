@@ -1,0 +1,82 @@
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+//        DecreasingCounter counter = new DecreasingCounter(100);
+//        counter.printValue();
+//        counter.reset();
+//
+//        counter.printValue();
+//
+//        counter.decrement();
+//        counter.printValue();
+
+//        PaymentCard card = new PaymentCard(50);
+//        System.out.println(card);
+//
+//        card.eatAffordably();
+//        System.out.println(card);
+//
+//        card.eatHeatily();
+//        card.eatAffordably();
+//        System.out.println(card);
+
+//        PaymentCard card = new PaymentCard(5);
+//        System.out.println(card);
+//
+//        card.eatHeatily();
+//        System.out.println(card);
+//
+//        card.eatHeatily();
+//        System.out.println(card);
+
+
+//        PaymentCard card = new PaymentCard(10);
+//        System.out.println(card);
+//
+//        card.addMoney(15);
+//        System.out.println(card);
+//
+//        card.addMoney(10);
+//        System.out.println(card);
+//
+//        card.addMoney(200);
+//        System.out.println(card);
+
+//        PaymentCard card = new PaymentCard(10);
+//        System.out.println("Paul: " + card);
+//        card.addMoney(-15);
+//        System.out.println("Paul: " + card);
+
+        PaymentCard paulsCard = new PaymentCard(20);
+        PaymentCard mattsCard = new PaymentCard(30);
+
+        paulsCard.eatHeatily();
+        mattsCard.eatAffordably();
+
+        System.out.println("Paul: " + paulsCard);
+        System.out.println("Matt: " + mattsCard);
+
+        paulsCard.addMoney(20);
+        mattsCard.eatHeatily();
+
+        System.out.println("Paul: " + paulsCard);
+        System.out.println("Matt: " + mattsCard);
+
+        paulsCard.eatAffordably();
+        paulsCard.eatAffordably();
+        mattsCard.addMoney(50);
+
+        System.out.println("Paul: " + paulsCard);
+        System.out.println("Matt: " + mattsCard);
+
+    }
+
+
+
+}
+
+
+
+

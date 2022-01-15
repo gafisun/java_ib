@@ -1,0 +1,31 @@
+import java.util.Random;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+        String[] data = new String[2];
+        data[0] = "alex sunshine";
+        data[1] = "emma haskell";
+
+        System.out.print("Enter username: ");
+        Scanner scanner = new Scanner(System.in);
+        String user = scanner.nextLine();
+        System.out.print("Enter password: ");
+        String pass = scanner.nextLine();
+        Boolean ok = false;
+
+        for (int i = 0; i < 2; i++) {
+            String proverka = user + " " + pass;
+            if (data[i].equals(proverka)) {
+                ok = true;
+            }
+        }
+        if (ok) {
+            System.out.print("You have successfully logged in!");
+        } else {
+            System.out.print("Incorrect username or password!");
+        }
+    }
+}

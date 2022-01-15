@@ -1,0 +1,25 @@
+import java.util.Random;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+        ArrayList<Integer> numbers = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+        String number_s = scanner.nextLine();
+        Integer number;
+        while (number_s.length()>0){
+            number = Integer.parseInt(number_s);
+            numbers.add(number);
+            number_s = scanner.nextLine();
+        }
+
+        System.out.println("Search for? ");
+        String s_find = scanner.nextLine();
+        Integer find = Integer.parseInt(s_find);
+
+        System.out.println(find + " is at index " + numbers.indexOf(find));
+
+    }
+}

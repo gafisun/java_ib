@@ -1,0 +1,18 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Give a number:");
+        String s_number = scanner.nextLine();
+        Integer number = Integer.parseInt(s_number);
+        if (number % 2 ==0 ){
+            System.out.println("Number " + number + " is even.");
+        } else {
+            System.out.println("Number " + number + " is odd.");
+        }
+
+    }
+}

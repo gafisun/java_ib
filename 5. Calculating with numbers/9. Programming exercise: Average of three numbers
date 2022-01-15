@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Give the first number:");
+        String s_first = scanner.nextLine();
+        Double first = Double.parseDouble(s_first);
+        System.out.println("Give the second number:");
+        String s_second = scanner.nextLine();
+        Double second = Double.parseDouble(s_second);
+        System.out.println("Give the third number:");
+        String s_third = scanner.nextLine();
+        Double third = Double.parseDouble(s_third);
+        Double sum = (first + second + third)/3;
+        System.out.println("The average is " + sum);
+    }
+}

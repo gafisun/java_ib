@@ -1,0 +1,21 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String s_fisrt = scanner.nextLine();
+        Integer first = Integer.parseInt(s_fisrt);
+        String s_second = scanner.nextLine();
+        Integer second = Integer.parseInt(s_second);
+        if (first > second) {
+            System.out.println(first + " is greater than " + second);
+        } else if (first < second) {
+            System.out.println(first + " is smaller than " + second);
+        } else if (first == second) {
+            System.out.println(first + " is equal to " + second);
+        }
+
+    }
+}

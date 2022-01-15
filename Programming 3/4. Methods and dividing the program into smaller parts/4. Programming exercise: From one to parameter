@@ -1,0 +1,19 @@
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String s_number = scanner.nextLine();
+        Integer number = Integer.parseInt(s_number);
+        printUntilNumber(number);
+    }
+
+    public static void printUntilNumber(int number) {
+        for (int i = 1; i <= number; i++) {
+            System.out.println(i);
+        }
+    }
+}

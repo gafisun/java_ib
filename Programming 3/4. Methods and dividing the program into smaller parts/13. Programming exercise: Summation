@@ -1,0 +1,22 @@
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class Main {
+    public static int sum(int number1, int number2, int number3, int number4) {
+        return number1 + number2 + number3 + number4;
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String s_1 = scanner.nextLine();
+        Integer first = Integer.parseInt(s_1);
+        String s_2 = scanner.nextLine();
+        Integer second = Integer.parseInt(s_2);
+        String s_3 = scanner.nextLine();
+        Integer third = Integer.parseInt(s_3);
+        String s_4 = scanner.nextLine();
+        Integer four = Integer.parseInt(s_4);
+        int answer = sum(first, second, third, four );
+        System.out.println("Sum: " + answer);
+    }
+}

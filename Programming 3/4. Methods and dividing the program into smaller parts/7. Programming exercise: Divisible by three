@@ -1,0 +1,23 @@
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String s_a = scanner.nextLine();
+        Integer a = Integer.parseInt(s_a);
+        String s_b = scanner.nextLine();
+        Integer b = Integer.parseInt(s_b);
+        divisibleByThreeInRange(a, b);
+    }
+
+    public static void divisibleByThreeInRange(int a, int b) {
+        for (int i = a; i <= b; i++) {
+            if (i%3==0){
+                System.out.println(i);
+            }
+        }
+    }
+}

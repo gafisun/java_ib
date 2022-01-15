@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("Give a string:");
+        String v_string = scanner.nextLine();
+        System.out.println("Give a integer:");
+        String s_integer = scanner.nextLine();
+        Integer v_integer = Integer.parseInt(s_integer);
+        System.out.println("Give a double:");
+        String s_double = scanner.nextLine();
+        Double v_double = Double.parseDouble(s_double);
+        System.out.println("Give a boolean:");
+        String s_boolean = scanner.nextLine();
+        Boolean v_boolean = Boolean.parseBoolean(s_boolean);
+        System.out.println("You gave the string " + v_string);
+        System.out.println("You gave the integer " + v_integer);
+        System.out.println("You gave the double " + v_double);
+        System.out.println("You gave the boolean " + v_boolean);
+    }
+}

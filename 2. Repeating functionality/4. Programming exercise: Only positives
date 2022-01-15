@@ -1,0 +1,25 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("Give a number:");
+        Scanner scanner = new Scanner(System.in);
+        String s_number = scanner.nextLine();
+        Integer number = Integer.parseInt(s_number);
+        while(number != 0){
+            if (number > 0){
+                System.out.println(number*number);
+            }
+            else {
+                System.out.println("Unsuitable number");
+            }
+            System.out.println("Give a number:");
+            s_number = scanner.nextLine();
+            number = Integer.parseInt(s_number);
+
+        }
+
+    }
+}
