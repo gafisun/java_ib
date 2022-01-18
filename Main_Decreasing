@@ -3,7 +3,7 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-//        DecreasingCounter counter = new DecreasingCounter(100);
+//        com.company.DecreasingCounter counter = new com.company.DecreasingCounter(100);
 //        counter.printValue();
 //        counter.reset();
 //
@@ -12,7 +12,7 @@ public class Main {
 //        counter.decrement();
 //        counter.printValue();
 
-//        PaymentCard card = new PaymentCard(50);
+//        com.company.PaymentCard card = new com.company.PaymentCard(50);
 //        System.out.println(card);
 //
 //        card.eatAffordably();
@@ -22,7 +22,7 @@ public class Main {
 //        card.eatAffordably();
 //        System.out.println(card);
 
-//        PaymentCard card = new PaymentCard(5);
+//        com.company.PaymentCard card = new com.company.PaymentCard(5);
 //        System.out.println(card);
 //
 //        card.eatHeatily();
@@ -32,7 +32,7 @@ public class Main {
 //        System.out.println(card);
 
 
-//        PaymentCard card = new PaymentCard(10);
+//        com.company.PaymentCard card = new com.company.PaymentCard(10);
 //        System.out.println(card);
 //
 //        card.addMoney(15);
@@ -44,13 +44,13 @@ public class Main {
 //        card.addMoney(200);
 //        System.out.println(card);
 
-//        PaymentCard card = new PaymentCard(10);
+//        com.company.PaymentCard card = new com.company.PaymentCard(10);
 //        System.out.println("Paul: " + card);
 //        card.addMoney(-15);
 //        System.out.println("Paul: " + card);
 
-        PaymentCard paulsCard = new PaymentCard(20);
-        PaymentCard mattsCard = new PaymentCard(30);
+        com.company.PaymentCard paulsCard = new com.company.PaymentCard(20);
+        com.company.PaymentCard mattsCard = new com.company.PaymentCard(30);
 
         paulsCard.eatHeatily();
         mattsCard.eatAffordably();

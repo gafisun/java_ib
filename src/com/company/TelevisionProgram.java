@@ -1,3 +1,5 @@
+package com.company;
+
 public class TelevisionProgram {
     private String name;
     private int duration;

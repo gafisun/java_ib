@@ -1,3 +1,5 @@
+package com.company;
+
 public class DecreasingCounter {
     private int value;
 

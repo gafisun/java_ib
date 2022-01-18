@@ -1,3 +1,5 @@
+package com.company;
+
 public class Clock {
     private ClockHand hours;
     private ClockHand minutes;

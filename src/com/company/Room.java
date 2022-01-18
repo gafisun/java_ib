@@ -1,3 +1,5 @@
+package com.company;
+
 public class Room {
     private String code;
     private int seats;

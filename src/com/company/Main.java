@@ -1,3 +1,5 @@
+package com.company;
+
 import java.util.*;
 
 public class Main {
@@ -6,7 +8,7 @@ public class Main {
 
 
 
-//        Fitbyte assistant = new Fitbyte(30, 60);
+//        com.company.Fitbyte assistant = new com.company.Fitbyte(30, 60);
 //        double percentage = 0.5;
 //        while (percentage < 1.0) {
 //             double target = assistant.targetHeartRate(percentage);

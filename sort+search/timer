@@ -2,11 +2,11 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        ClockHand hours = new ClockHand(24);
-        ClockHand minutes = new ClockHand(60);
-        ClockHand seconds = new ClockHand(60);
+        com.company.ClockHand hours = new com.company.ClockHand(24);
+        com.company.ClockHand minutes = new com.company.ClockHand(60);
+        com.company.ClockHand seconds = new com.company.ClockHand(60);
 
-        Timer timer = new Timer();
+        com.company.Timer timer = new com.company.Timer();
 
         while (true) {
             System.out.println(timer);

@@ -1,3 +1,5 @@
+package com.company;
+
 public class Fitbyte {
     private int Age;
     private int RestingHeartRate;

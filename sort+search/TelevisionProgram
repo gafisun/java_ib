@@ -7,13 +7,13 @@ public class Main {
         String name = scanner.nextLine();
         String s_duration;
         Integer duration=0;
-        List<TelevisionProgram> ListOfPrograms = new ArrayList<TelevisionProgram>();
+        List<com.company.TelevisionProgram> ListOfPrograms = new ArrayList<com.company.TelevisionProgram>();
 
         while (name!=""){
             System.out.println("Duration:");
             s_duration = scanner.nextLine();
             duration = Integer.parseInt(s_duration);
-            TelevisionProgram program = new TelevisionProgram(name, duration);
+            com.company.TelevisionProgram program = new com.company.TelevisionProgram(name, duration);
             ListOfPrograms.add(program);
             System.out.println("Name:");
             name = scanner.nextLine();

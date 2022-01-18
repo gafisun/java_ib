@@ -1,3 +1,5 @@
+package com.company;
+
 public class Timer {
     private ClockHand seconds;
     private ClockHand milliseconds;

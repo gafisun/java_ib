@@ -1,3 +1,5 @@
+package com.company;
+
 public class ClockHand {
     private int value;
     private int limit;
