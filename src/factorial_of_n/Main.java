@@ -1,6 +1,5 @@
 package factorial_of_n;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
