@@ -1,0 +1,7 @@
+SUM = 0
+input NEW
+loop while NEW >= 0
+SUM += NEW
+input NEW
+end loop
+output SUM
