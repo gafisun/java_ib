@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-01-25T12:46:23.999Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15" etag="_p8hmVMQ8JfqLHJ8WQ2z" version="16.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-25T12:51:22.762Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15" etag="XZFRGhVQ-KJOm6Jc9AqD" version="16.4.6" type="github">
   <diagram id="lDVrdTSE1b3Xtm_8JWBm" name="Page-1">
-    <mxGraphModel dx="1823" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="977" dy="363" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,7 +11,7 @@
           <mxGeometry x="354" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="J8c03_1jTpqeIVsCipRT-2" value="End" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="80" y="950" width="120" height="60" as="geometry" />
+          <mxGeometry x="80" y="960" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="J8c03_1jTpqeIVsCipRT-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J8c03_1jTpqeIVsCipRT-14" target="J8c03_1jTpqeIVsCipRT-21">
           <mxGeometry relative="1" as="geometry" />
@@ -33,22 +33,24 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J8c03_1jTpqeIVsCipRT-33" value="Отмена" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J8c03_1jTpqeIVsCipRT-21" target="J8c03_1jTpqeIVsCipRT-19">
+        <mxCell id="J8c03_1jTpqeIVsCipRT-33" value="Отмена" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J8c03_1jTpqeIVsCipRT-21" target="J8c03_1jTpqeIVsCipRT-91">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="-80" y="210" />
+              <mxPoint x="-80" y="650" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="J8c03_1jTpqeIVsCipRT-21" value="Ожидание ПИН-кода" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=0;" vertex="1" parent="1">
           <mxGeometry x="344" y="180" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="J8c03_1jTpqeIVsCipRT-24" value="Отмена" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="J8c03_1jTpqeIVsCipRT-22" target="J8c03_1jTpqeIVsCipRT-19">
+        <mxCell id="J8c03_1jTpqeIVsCipRT-24" value="Отмена" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="J8c03_1jTpqeIVsCipRT-22" target="J8c03_1jTpqeIVsCipRT-91">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="520" y="310" />
-              <mxPoint x="520" y="390" />
+              <mxPoint x="390" y="310" />
+              <mxPoint x="390" y="390" />
               <mxPoint x="-30" y="390" />
+              <mxPoint x="-30" y="650" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -78,7 +80,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="J8c03_1jTpqeIVsCipRT-22" value="Проверка ПИН-кода" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;" vertex="1" parent="1">
-          <mxGeometry x="484" y="280" width="140" height="60" as="geometry" />
+          <mxGeometry x="344" y="280" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="J8c03_1jTpqeIVsCipRT-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J8c03_1jTpqeIVsCipRT-34" target="J8c03_1jTpqeIVsCipRT-2">
           <mxGeometry relative="1" as="geometry" />
@@ -86,10 +88,11 @@
         <mxCell id="J8c03_1jTpqeIVsCipRT-34" value="Конфискация карточки" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=0;" vertex="1" parent="1">
           <mxGeometry x="70" y="430" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="J8c03_1jTpqeIVsCipRT-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J8c03_1jTpqeIVsCipRT-45" target="J8c03_1jTpqeIVsCipRT-19">
+        <mxCell id="J8c03_1jTpqeIVsCipRT-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J8c03_1jTpqeIVsCipRT-45" target="J8c03_1jTpqeIVsCipRT-91">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-10" y="510" />
+              <mxPoint x="-180" y="510" />
+              <mxPoint x="-180" y="570" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -156,18 +159,18 @@
         <mxCell id="J8c03_1jTpqeIVsCipRT-61" value="Подтверждение перевода" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="660" y="800" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="J8c03_1jTpqeIVsCipRT-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J8c03_1jTpqeIVsCipRT-67">
+        <mxCell id="J8c03_1jTpqeIVsCipRT-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J8c03_1jTpqeIVsCipRT-67" target="J8c03_1jTpqeIVsCipRT-2">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="790" y="645" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="790" y="1050" />
-              <mxPoint x="790" y="645" />
+              <mxPoint x="520" y="1130" />
+              <mxPoint x="140" y="1130" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="J8c03_1jTpqeIVsCipRT-71" value="Чек напечатан" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="J8c03_1jTpqeIVsCipRT-69">
           <mxGeometry x="-0.633" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="-125" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="J8c03_1jTpqeIVsCipRT-67" value="Печать Чека" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
@@ -242,6 +245,9 @@
         </mxCell>
         <mxCell id="J8c03_1jTpqeIVsCipRT-87" value="Достаточно средств" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="366" y="710" width="96" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="J8c03_1jTpqeIVsCipRT-91" value="Отмена операции" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="540" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
