@@ -1,4 +1,4 @@
-package Binary_search_29_01;
+package Flowchart_2.Binary_search_29_01;
 
 import java.util.*;
 
