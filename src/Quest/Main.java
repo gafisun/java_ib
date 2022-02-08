@@ -76,6 +76,7 @@ public class Main {
         list_action.put(22, new Block("Action","...в лесу.", 7, 1));
         list_action.put(23, new Block("Action_End", "Вы не хотите рисковать заново.", 42, 1));
         list_action.put(24, new Block("Action_End","Вы решаетесь отомстить королю.", 13, 1));
+        list_action.put(25, new Block("Action_End","Начать рассказывать охране жёсткие шутки про короля", 14, 1));
 
         HashMap<Integer, Block> list_event = new HashMap<>();
         list_event.put(1, new Block("Event","Охранники увидев аварию решили разобраться. У них займет -это какое-то время.", 8, 7));
@@ -97,6 +98,7 @@ public class Main {
         list_end.put(9, new Block("End",ANSI_GREEN+"Вы взрываете парламент и обедаете свежим прожаренным королевским мясом."+ ANSI_RESET, 0, 0));
         list_end.put(8, new Block("End", ANSI_PURPLE+"Вы скрываетесь и решаете убежать в Россию. Вам удалось скрыться в россии и вы закупаетесь валенками."+ ANSI_RESET, 0, 0));
         list_end.put(13, new Block("End",ANSI_GREEN+"Вы взрываете парламент и обедаете свежим прожаренным королевским мясом. Вы скрываетесь и решаете убежать в Россию. Вам удалось скрыться в России и вы закупаетесь валенками."+ ANSI_RESET, 0, 0));
+        list_end.put(14, new Block("End",ANSI_PURPLE+"Шутки получились настолько хорошими, что вы решаете отказаться от восстания и заняться заняться стендаппом профессионально. Вы оставляете Гая Фокса в телеге в городе. Ваша попытка провальная. Гая фокс остается грустить в телеге. Но не надолго."+ ANSI_RESET, 0, 0));
 
         ArrayList<Integer> unique_end = new ArrayList<>();
         unique_end.add(1);
@@ -108,6 +110,7 @@ public class Main {
         unique_end.add(9);
         unique_end.add(8);
         unique_end.add(13);
+        unique_end.add(14);
 
         System.out.println(ANSI_CYAN+"Ночь Гая Фокса\n" +
                 "В эту ночь, пятую после Хэллоуина, отмечается провал Порохового заговора, когда группа католиков-заговорщиков попыталась взорвать Парламент Великобритании в Лондоне. Uай Фокс пытался поджечь в подвале Вестминстерского дворца бочки с порохом. \n" +
@@ -146,6 +149,8 @@ public class Main {
                 System.out.println(list_action.get(4).value);
                 System.out.println("[2]");
                 System.out.println(list_action.get(3).value);
+                System.out.println("[3]");
+                System.out.println(list_action.get(25).value);
                 System.out.println(ANSI_BLUE + "================================================"+ ANSI_RESET);
                 in = input.nextInt();
                 if (in == 1){
@@ -154,6 +159,9 @@ public class Main {
                 } else if (in == 2){
                     next = 2;
                     past = 3;
+                } else if (in == 3){
+                    next = 14;
+                    past = 25;
                 }
             } else if (in == 2 ){
                 System.out.println("  _______ _            ______           _   \n" +
@@ -166,10 +174,10 @@ public class Main {
                 finish = false;
                 if (unique_end.contains(1)){
                     end_count += 1;
-                    System.out.println("Вы разблокировали " + end_count + " из 9 возможных концовок.");
+                    System.out.println("Вы разблокировали " + end_count + " из 10 возможных концовок.");
                     unique_end.remove(unique_end.indexOf(1));
                 } else {
-                    System.out.println("Вы не разблокировали ещё  " + (9-end_count) + " из 9 возможных концовок.");
+                    System.out.println("Вы не разблокировали ещё  " + (10-end_count) + " из 9 возможных концовок.");
                 }
                 System.out.println("Начать заново?");
                 System.out.println("<Нажмите на цифру 1> для перезагрузки игры");
@@ -179,6 +187,7 @@ public class Main {
                     game = false;
                 }
             }
+
             while(finish){
                 if (list_action.get(past).type.equals("Action")){
                     System.out.println(ANSI_BLUE + "================================================"+ ANSI_RESET);
@@ -216,10 +225,10 @@ public class Main {
                     finish = false;
                     if (unique_end.contains(list_action.get(past).index_1)){
                         end_count += 1;
-                        System.out.println("Вы разблокировали " + end_count + " из 9 возможных концовок.");
+                        System.out.println("Вы разблокировали " + end_count + " из 10 возможных концовок.");
                         unique_end.remove(unique_end.indexOf(list_action.get(past).index_1));
                     } else {
-                        System.out.println("Вы не разблокировали ещё  " + (9-end_count) + " из 9 возможных концовок.");
+                        System.out.println("Вы не разблокировали ещё  " + (10-end_count) + " из 10 возможных концовок.");
                     }
                     System.out.println("Начать заново?");
                     System.out.println("<Нажмите на цифру 1> для перезагрузки игры");
