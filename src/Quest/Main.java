@@ -60,7 +60,7 @@ public class Main {
         list_action.put(6, new Block("Action", "Попробовать взломать замок сдерживающий дверцу тюремной кареты. На вид кажется проще простого.", 4, 1));
         list_action.put(7, new Block("Action", "Попробовать взломать замок сдерживающий дверцу тюремной кареты. На вид кажется проще простого.", 4, 1));
         list_action.put(8, new Block("Action_End","Вы полностью уверены в себе и нападаете на охрану.", 31, 1));
-        list_action.put(9, new Block("Action_End", "Вы в отчаянии взрываете мост.", 1, 1));
+        list_action.put(9, new Block("Action_End", "Напасть на охрану", 31, 1));
         list_action.put(10, new Block("Action_End", "Вы бросаете Гая Фокса.", 2, 1));
         list_action.put(11, new Block("Action_Double","Вы можете решить сразу увести карету.", 12, 13));
         list_action.put(12, new Block("Action","У вас есть выбор скрыться в городе или ...", 6, 1));
