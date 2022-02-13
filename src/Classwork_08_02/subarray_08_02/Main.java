@@ -1,4 +1,4 @@
-package subarray_08_02;
+package Classwork_08_02.subarray_08_02;
 //The task is to divide an array into two sub-array
 //        (left and right) containing n/2 elements each and
 //        do the sum of the subarrays and then multiply

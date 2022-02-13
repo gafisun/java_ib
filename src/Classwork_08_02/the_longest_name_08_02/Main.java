@@ -1,4 +1,4 @@
-package the_longest_name_08_02;
+package Classwork_08_02.the_longest_name_08_02;
 //Given a list of names, display the longest name.
 //For example: N = 5
 //names[] = { "Geek", "Geeks", "Geeksfor",

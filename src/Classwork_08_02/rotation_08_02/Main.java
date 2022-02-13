@@ -1,4 +1,4 @@
-package rotation_08_02;
+package Classwork_08_02.rotation_08_02;
 
 import java.util.Scanner;
 
