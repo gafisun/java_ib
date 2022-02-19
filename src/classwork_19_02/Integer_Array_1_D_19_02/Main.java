@@ -1,4 +1,4 @@
-package Integer_Array_1_D_19_02;
+package classwork_19_02.Integer_Array_1_D_19_02;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -17,7 +17,6 @@ public class Main {
         Scanner in = new Scanner(System.in);
         String[] intik = in.nextLine().split(" ");
         ArrayList<Integer> listik = new ArrayList<>();
-        ArrayList<Integer> output = new ArrayList<>();
         for(String j:intik){
             listik.add(Integer.parseInt(j));
         }

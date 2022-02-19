@@ -1,8 +1,7 @@
-package two_words_two_output_19_02;
+package classwork_19_02.two_words_two_output_19_02;
 //2) The program is to ask user for two words and then output
 //the first two characters of the first word and
 //the last two characters of the second word
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
