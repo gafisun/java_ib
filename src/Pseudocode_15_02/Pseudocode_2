@@ -1,0 +1,26 @@
+HAYSTACK = [ 1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37 ]
+
+TARGET = 1002
+
+LOW = 0
+HIGH = 7
+FOUND = -1
+
+loop while FOUND = -1 AND LOW <= HIGH
+  MID = div( LOW + HIGH , 2 )   // should be (LOW + HIGH) div 2
+                                // but (A div B) doesn't work correctly
+			        // so there is a special method below
+  if ID[MID] = TARGET then
+      FOUND = MID
+  else if TARGET < ID[MID] then
+      HIGH = MID - 1
+  else
+      LOW = MID + 1
+  end if
+end while
+
+if FOUND >= 0 then
+    output TARGET
+else
+    output TARGET , " was not found"
+end if
