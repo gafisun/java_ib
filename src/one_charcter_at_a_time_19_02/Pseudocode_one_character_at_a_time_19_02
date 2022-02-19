@@ -1,0 +1,4 @@
+input NAME
+loop COUNT from 0 to 3
+  output NAME[COUNT]
+end loop
