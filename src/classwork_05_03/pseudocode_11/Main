@@ -1,0 +1,9 @@
+loop X from 0 to ARRAY.length - 1
+   if STRING[X] = 'a' then
+      TR = TRUE
+   end if
+end loop
+if TR then
+    return true
+else
+    return false

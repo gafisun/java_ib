@@ -1,0 +1,7 @@
+A = 1
+loop until A = 11
+   if A mod 2 = 0 then
+      output A
+   end if
+   A = A + 1
+end loop

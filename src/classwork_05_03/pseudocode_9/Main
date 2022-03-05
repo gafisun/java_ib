@@ -1,0 +1,4 @@
+loop X from 0 to ARRAY.length - 1
+    SUM = SUM + ARRAY
+end loop
+AVG = SUM div ARRAY.lenght

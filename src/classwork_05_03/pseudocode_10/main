@@ -1,0 +1,5 @@
+if A = B then
+   output "same"
+else
+    output "different"
+end if

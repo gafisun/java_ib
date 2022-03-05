@@ -1,0 +1,5 @@
+A=5
+B = 10
+if A < B AND A mod 5 = 0 then
+   output A
+end if

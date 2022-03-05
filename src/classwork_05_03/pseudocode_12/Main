@@ -1,0 +1,6 @@
+loop X from 0 to NUM
+   if NUM mod x = 0 then
+      TR = false
+   end if
+end loop
+return TR
