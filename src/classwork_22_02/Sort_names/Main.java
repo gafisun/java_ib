@@ -4,6 +4,7 @@
 ////
 ////        Below is the selection sort algorithm used to sort an array of integers.
 //
+//import java.util.HashMap;
 //import java.util.Scanner;
 //
 ////        Complete the method selectionSort.
@@ -17,7 +18,9 @@
 //public class Main {
 //    public static void main(String[] args) {
 //        Scanner in = new Scanner(System.in);
-//        String[] intik = in.nextLine().split(" ");
+//        String intik = in.nextLine();
+////        while ()
+//        HashMap<String, Integer> listik = new HashMap<>();
 //        void selectionSort(int numbers[]) {
 //            int i, j;
 //            int min, temp;
